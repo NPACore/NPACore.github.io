@@ -2,6 +2,9 @@
 
 * [`awesome-neuroimaging`](https://github.com/NPACore/awesome-neuroimaging)
 * [`tat2`](//lncd.github.io/lncdtools/tat2/)
+* MRSI
+    * [`QPASA slice altas positioning`](https://github.com/LabNeuroCogDevel/QPASA_slice-warp)
+    * [`MRSI Coordinate Placer`](https://github.com/LabNeuroCogDevel/MRSIcoord.py)
 * flywheel
 
 ## Unpublished
