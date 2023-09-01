@@ -3,6 +3,21 @@ theme:
   name: material
   custom_dir: docs
   logo: imgs/npac_correlationMatrix_BIDS.png
+  favicon: imgs/npac_correlationMatrix_BIDS.png
+  palette:
+    - primary: teal
+    - accent: red
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
   features:
     - content.code.annotate
 markdown_extensions:
