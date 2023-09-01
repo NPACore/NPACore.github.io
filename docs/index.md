@@ -10,4 +10,4 @@ NPAC is an interdisciplinary core sponsoring software infrastructure, developmen
 
 We are part of the [MR Research Center](https://www.rad.pitt.edu/mrrc-home.html) at University of Pittsburgh.
 
-NPAC is a young initiative and is excited to meet community needs. Please reach out to [Will Foran](mailto:foran@pitt.edu) for anything you cannot find on the sidebar or in our current [projects](projects) or our [github](//github.com/npacore).
+NPAC is a young initiative and is excited to meet community needs. Please reach out to [Will Foran](mailto:foran@pitt.edu?Subject=[NPAC] Q: ...&body=Hi Will! I have a question about ) for anything you cannot find on the sidebar or in our current [projects](projects) or our [github](//github.com/npacore).
