@@ -1,4 +1,6 @@
 site_name: NPAC
+repo_url: https://github.com/npacore/npacore.github.io/
+edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: docs
@@ -20,6 +22,7 @@ theme:
 
   features:
     - content.code.annotate
+    - content.action.edit
 markdown_extensions:
   - abbr
   - attr_list
