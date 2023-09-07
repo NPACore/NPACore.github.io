@@ -1,6 +1,6 @@
 # Resources
 
-See our "awesome-list" [^awesome] [awesome-neuroimaging](https://github.com/NPACore/awesome-neuroimaging)  for neuroimaging specific suits, software, and tools
+See our "awesome-list" [^awesome] [awesome-neuroimaging](https://github.com/NPACore/awesome-neuroimaging) for neuroimaging specific suits, software, and tools. Our [communications](/communications) and [people](/people) pages can help connect you directly to NPAC resources.
 
 ## University services
  * [CRC](https://github.com/sindresorhus/awesome)    - pitt provided HPC 
