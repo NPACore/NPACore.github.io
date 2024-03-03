@@ -32,6 +32,6 @@ MRRC Flywheel admins need your primary/non-aliased case sensitive (likely all ca
 You can find or confirm your Pitt account name following https://authtest.flywheel.io using "University Credentials" for "University of Pittsburgh."
 After authenticating, the "Id Token" section's "email" field is the case sensitive email flywheel needs to give you access. Screenshots below.
 
-![account from https://authtest.flywheel.io](imgs/flywheel_authtest_email.png)
+![account from https://authtest.flywheel.io](../imgs/flywheel_authtest_email.png)
 
 <!-- also my profile in pitt -->

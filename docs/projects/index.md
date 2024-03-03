@@ -1,6 +1,9 @@
+---
+title: Overview
+---
 # Projects
 
-* flywheel [local notes](../flywheel) for MRRC's self-hosted instance [fw.mrrc.upmc.edu](https://fw.mrrc.upmc.edu) of [flywheel.io](https://flywheel.io)
+* flywheel [local notes](flywheel) for MRRC's self-hosted instance [fw.mrrc.upmc.edu](https://fw.mrrc.upmc.edu) of [flywheel.io](https://flywheel.io)
 * [`awesome-neuroimaging`](https://github.com/NPACore/awesome-neuroimaging) - a curated list of neuroimaging software and links.
 * [`tat2`](//lncd.github.io/lncdtools/tat2/) - time averaged T2*
 * MRSI
