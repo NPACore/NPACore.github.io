@@ -15,3 +15,6 @@ Compared that to [warping](https://andysbrainbook.readthedocs.io/en/latest/fMRI_
 `3dresample` is an AFNI tool to resample an inset to the "master". We can compare it to FSL's `flirt` which reorients a brain to a reference (`-ref`).
 Both commands produce a new image with the same grid. However, the output of the `flirt` command will have a brain that's been moved. The value of the voxel at `(i,j)` `(1,1)` will be different in the input, resampled (`3dresample`), and registered (`flirt`) images.
 ![resample vs affine transform](../imgs/resample_vs_affine.png)
+
+
+(Please use the edit button in the top right to suggest any changes or clarifications using github!)
