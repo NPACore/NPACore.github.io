@@ -1,7 +1,7 @@
 ## Email Lists
 You can subscribe to our moderated mailling lists using a web forum or sending a message with the subject "subscribe" (or "unsubscribe" if you no longer want messages).
 
-  * **flywheel** provides notifications related to MRRC self-hosted [flywheel.io](flywheel.io) MR data management instance.
+  * **flywheel** provides notifications related to MRRC self-hosted [flywheel.io](https://flywheel.io) MR data management instance.
    Subscribe by [web](https://list.pitt.edu/mailman/listinfo/flywheel) or mailing [flywheel@list.pitt.edu](mailto:flywheel@list.pitt.edu?subject=subscribe). Also see the [archive](https://list.pitt.edu/mailman/private/flywheel/)
   * The MR Center also runs a mailing list for **all users**: [web](https://list.pitt.edu/mailman/listinfo/mrctrusers), [mrctrusers@list.pitt.edu](mailto:mrctrusers@list.pitt.edu?subject=subscribe), [archive](https://list.pitt.edu/mailman/private/mrctrusers/)
 
