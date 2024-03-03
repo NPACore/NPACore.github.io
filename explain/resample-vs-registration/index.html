@@ -350,9 +350,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Resampling vs Registration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Resampling vs Registration
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3dresample-vs-flirt" class="md-nav__link">
+    3dresample vs flirt
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -448,6 +479,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3dresample-vs-flirt" class="md-nav__link">
+    3dresample vs flirt
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -472,15 +518,18 @@
 <h1 id="resampling-vs-registration">Resampling vs Registration</h1>
 <p>Both resampling and registration (also spatial normalization/warping) modify the underlying matrices of one image to match that of another.
 But unlike resampling, only registration and warping inspect and modify based on the data within the images.</p>
+<div class="admonition danger">
 <p>Resampling is concerned with the matrix shape, registration with the matrix content.</p>
+</div>
 <p>From <a href="https://andysbrainbook.readthedocs.io/en/latest/FrequentlyAskedQuestions/FrequentlyAskedQuestions.html#resampling">Andy's Brain Book</a></p>
 <blockquote>
 <p>Resampling means changing either the resolution, dimensions, or both the resolution and dimensions of an image. </p>
 </blockquote>
 <p>Compared that to <a href="https://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/Preprocessing/Registration_Normalization.html#registration-and-normalization">warping</a> where</p>
 <blockquote>
-<p>each brain [within an image] needs to be transformed to have the same ... shape</p>
+<p>each brain [within an image] needs to be transformed</p>
 </blockquote>
+<h2 id="3dresample-vs-flirt"><code>3dresample</code> vs <code>flirt</code></h2>
 <p><code>3dresample</code> is an AFNI tool to resample an inset to the "master". We can compare it to FSL's <code>flirt</code> which reorients a brain to a reference (<code>-ref</code>).
 Both commands produce a new image with the same grid. However, the output of the <code>flirt</code> command will have a brain that's been moved. The value of the voxel at <code>(i,j)</code> <code>(1,1)</code> will be different in the input, resampled (<code>3dresample</code>), and registered (<code>flirt</code>) images.
 <img alt="resample vs affine transform" src="../../imgs/resample_vs_affine.png" /></p>
