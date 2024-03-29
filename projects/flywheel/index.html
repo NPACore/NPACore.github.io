@@ -280,21 +280,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../flywheel/" class="md-nav__link">
-        Flywheel @ MRRC
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../people/" class="md-nav__link">
         People
       </a>
@@ -330,17 +315,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
       
       
       
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
           Explain
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Explain
         </label>
@@ -381,17 +366,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
           Projects
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_7">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Projects
         </label>
@@ -478,6 +463,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gears" class="md-nav__link">
+    Gears
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authentication" class="md-nav__link">
     Authentication
   </a>
@@ -553,6 +545,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#gears" class="md-nav__link">
+    Gears
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authentication" class="md-nav__link">
     Authentication
   </a>
@@ -594,6 +593,10 @@ You must either be in a UPMC building or access with a web browser launched from
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>fw ingest dicom --include &#39;MR.*&#39; -vd 2024.02.15-08.50.45/11998_20240215/ luna wpc-8620-habit
 </span></code></pre></div>
 <p>This example is tailored to work with MRRC Prisma DICOMS. The command uploads the session folder <code>2024.02.15-08.50.45/11998_20240215/</code> including sub-directories for all acquisitions for that visit to the <code>luna</code> group's project <code>wpc-8620-habit</code>. Notably, we need to specify the dicom pattern as anything starting with <code>MR</code>.</p>
+<h2 id="gears">Gears</h2>
+<p>"Gears" are docker containers that can be run manually on the web interface or automatically via <a href="https://docs.flywheel.io/User_Guides/user_project_gear_rules/">"gear rules."</a>.</p>
+<p>Flywheel curates publicly available gears on the <a href="https://docs.flywheel.io/hc/en-us/articles/4410774982419-The-Gear-Exchange">Gear Exchange</a>. 
+We can also create custom gears for bespoke pipelines.</p>
 <h2 id="authentication">Authentication</h2>
 <p>Flywheel authentication uses pitt.edu credentials through "University Credential via CILogin."
 MRRC Flywheel admins need your primary/non-aliased case sensitive (likely all caps) pitt email addresses to match CILogin and grant access.</p>
