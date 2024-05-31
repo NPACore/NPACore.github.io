@@ -5,7 +5,7 @@
 # 20240531WF - init
 
 ADMIN_ACCOUNT=Oacadmin
-USER_ACCOUNT="${1:$ADMIN_ACCOUNT}"; shift
+USER_ACCOUNT="${1:-$ADMIN_ACCOUNT}"; shift
 
 # packages to get from the internet
 # 20240531: using arm versions (instead of intel/x64)
@@ -21,8 +21,8 @@ BREWPKGS=(
 )
 
 install_dmg(){
- dmg=${1?.dmg file}; shift
- dmg_name=${1?path inside dmg mount}
+ dmg=${1?-.dmg file}; shift
+ dmg_name=${1?-path inside dmg mount}
 
  hdiutil mount "$dmg"
  # todo: test if already exists

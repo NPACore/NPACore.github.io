@@ -23,6 +23,11 @@ fw ingest dicom --include 'MR.*' -vd 2024.02.15-08.50.45/11998_20240215/ luna wp
 
 This example is tailored to work with MRRC Prisma DICOMS. The command uploads the session folder `2024.02.15-08.50.45/11998_20240215/` including sub-directories for all acquisitions for that visit to the `luna` group's project `wpc-8620-habit`. Notably, we need to specify the dicom pattern as anything starting with `MR`.
 
+## Gears
+"Gears" are docker containers that can be run manually on the web interface or automatically via ["gear rules."](https://docs.flywheel.io/User_Guides/user_project_gear_rules/).
+
+Flywheel curates publicly available gears on the [Gear Exchange](https://docs.flywheel.io/hc/en-us/articles/4410774982419-The-Gear-Exchange). 
+We can also create custom gears for bespoke pipelines.
 
 ## Authentication
 
