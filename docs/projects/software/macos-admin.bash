@@ -2,6 +2,9 @@
 #
 # install neuroimaging software on adminstered macOS
 # 
+# also see 
+#   https://macos.gadgethacks.com/how-to/open-third-party-apps-from-unidentified-developers-macos-0158095/
+#   system preferences -> Security & Privacy -> "Open Anyway"
 # 20240531WF - init
 
 ADMIN_ACCOUNT=Oacadmin
@@ -10,9 +13,16 @@ USER_ACCOUNT="${1:-$ADMIN_ACCOUNT}"; shift
 # packages to get from the internet
 # 20240531: using arm versions (instead of intel/x64)
 DMGS=(
-
+  https://download1.rstudio.org/electron/macos/RStudio-2024.04.1-748.dmg
 )
 
+ZIPS=(
+   https://github.com/frankyeh/DSI-Studio/releases/download/2024.05.22/dsi_studio_macos-13_qt6.zip
+)
+PKG=(
+   https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.5/XQuartz-2.8.5.pkg
+   https://cran.rstudio.com/bin/macosx/big-sur-arm64/base/R-4.4.0-arm64.pkg
+)
 # packages to get from homebrew
 BREWPKGS=(
   git python
@@ -35,6 +45,17 @@ install_homebrew(){
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    source ~/.zprofile # get brew in path
    brew install "${BREWPKGS[@]}"
+}
+
+install_vagrant(){ # for singularity
+   brew cask install virtualbox && \
+    brew cask install vagrant && \
+    brew cask install vagrant-manager
+
+   local VM=sylabs/singularity-3.0-ubuntu-bionic64 
+   vagrant init $VM && \
+    vagrant up && \
+    vagrant ssh
 }
 
 # afni is install into home directory of the main user
@@ -60,8 +81,9 @@ $DRYRUN sed '$s,$,\n%wheel  ALL=(ALL) NOPASSWD: ALL,' /etc/sudoers
 
 $DRYRUN xcode-select --install
 $DRYRUN sudo -u $ADMIN_ACCOUNT install_homebrew
+$DRYRUN sudo -u $ADMIN_ACCOUNT install_vagrant
 
 $DRYRUN sudo -u $USER_ACCOUNT install_afni
 
 # afni r packages
-~$USER_ACCOUNT/abin/rPkgsInstall -pkgs ALL
+$DRYRUN sudo -u $USER_ACCOUNT /Users/$USER_ACCOUNT/abin/rPkgsInstall -pkgs ALL
