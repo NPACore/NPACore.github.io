@@ -1,0 +1,11 @@
+
+![](00_mriqc-install.png)
+![](01_session_run_gear.png)
+![](02_scitran.png)
+![](03_utility_dcm2niix.png)
+![](04_gear-outputs.png)
+![](05_mriqc.png)
+![](06_mriqc-output-html-view.png)
+![](06_mriqc-output.png)
+![](failed_phi-redact.png)
+![](xx_remove-phi.png)
