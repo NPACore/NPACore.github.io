@@ -1,0 +1,34 @@
+---
+title: Flywheel Python SDK examples
+---
+
+# Flywheel docs
+
+- <https://fw.mrrc.upmc.edu/api/docs> - api used by SDK
+- screenshots of object names in web ui. ipython notebook
+  <https://gitlab.com/flywheel-io/public/flywheel-tutorials/-/blob/master/webinars/finding_things_in_fw/finding_things_in_fw_notebook.ipynb>
+
+# Setup
+
+- Get fw cli and api key from your [profile
+  page](https://fw.mrrc.upmc.edu/#/profile)
+- Install the flywheel sdk, maybe using a python `virtualenv`
+
+``` bash
+# authenticate
+fw auth fw.mrrc.upmc.edu:XXXXXXXXXXX
+# creates eg. ~/.config/flywheel/user.json
+
+python -m virtualenv .venv
+source .venv/bin/activate
+pip install flywheel-sdk
+```
+
+# MRIQC metrics
+
+``` python
+import flywheel # flywheel-sdk
+fw = flywheel.Client() # auto login with ~/.config/flywheel/user.json
+prisma1qa = fw.projects(filter="label=Prisma1QA")[0]
+acqs = fw.acquisitions(filter=f"parents.project={prisma1qa.id},label=ep2d_bold_p2_s2_5min")
+```
