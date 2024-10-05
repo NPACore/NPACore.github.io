@@ -1,4 +1,4 @@
-# Flywheel
+# Flywheel Overview
 
 ## Web site
 [fw.mrrc.upmc.edu](https://fw.mrrc.upmc.edu/) hosts the MRRC's flywheel instance.
