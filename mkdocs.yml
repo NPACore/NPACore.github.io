@@ -40,3 +40,19 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
 
+plugins:
+  - multirepo:
+      cleanup: False # rm multirepo_docs/ with other repo docs
+      keep_docs_dir: true
+      #folder_name: multirepo_docs # where other repos are stored
+      repos:
+        - section: 'MRRC QA'
+          section_path: 'Projects/External'
+          import_url: 'https://github.com/NPACore/fw-mrrcqa?branch=main&docs_dir=*.md&multi_docs=false'
+        - section: 'svslipid'
+          section_path: 'Projects/External'
+          import_url: 'https://github.com/NPACore/svslipid?branch=main&docs_dir=*.md&multi_docs=false'
+        - section: ''
+          section_path: 'Projects/External'
+          import_url: 'https://github.com/NPACore/awesome-neuroimaging?branch=main&docs_dir=readme.md&multi_docs=true'
+
