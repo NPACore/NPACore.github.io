@@ -4,3 +4,7 @@
 ## Deploy
 run `make` to update `gh-pages` branch with static assets
 
+## Elsewhere
+Also see
+ * dokuwiki https://rad.pitt.edu/wiki/
+ * confluence https://pitt-rad-it.atlassian.net/wiki/
