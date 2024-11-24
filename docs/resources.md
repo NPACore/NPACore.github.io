@@ -1,6 +1,7 @@
 # External Resources
 
-See our "awesome-list" [^awesome] [awesome-neuroimaging](https://github.com/NPACore/awesome-neuroimaging) for neuroimaging specific suits, software, and tools. Our [communications](/communications) and [people](/people) pages can help connect you directly to NPAC resources.
+See our "awesome-list" [^awesome] [awesome-neuroimaging](https://github.com/NPACore/awesome-neuroimaging) for neuroimaging specific suits, software, and tools. Our [communications](/communications) and [people](/people) pages can help connect you directly to NPAC [support](/support).
+
 
 ## University services
  * [CRC](https://crc.pitt.edu/)    - pitt provided HPC 
