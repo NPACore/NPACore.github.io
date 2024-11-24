@@ -10,7 +10,7 @@ MD_ORG := $(patsubst %.org,%.md,$(ALLORG))
 	grep "$@" .gitignore || echo "$@" >> .gitignore
 
 .venv/: requirements.txt
-	test -r .venv || python -m venv .venv
+	! test -r .venv && python -m venv .venv || touch .venv
 	$(VENV) python3 -m pip install -r requirements.txt
 
 deploy: $(MD_ORG) | .venv/
