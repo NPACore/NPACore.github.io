@@ -1,5 +1,6 @@
 .PHONY: all deploy
 all: deploy
+VENV := . .venv/bin/activate &&
 
 # org mode to markdown
 ALLORG := $(shell find docs/ -iname '*.org')
@@ -8,5 +9,11 @@ MD_ORG := $(patsubst %.org,%.md,$(ALLORG))
 	pandoc -s -t gfm -i $< -o $@
 	grep "$@" .gitignore || echo "$@" >> .gitignore
 
-deploy: $(MD_ORG)
-	mkdocs gh-deploy
+.venv/: requirements.txt
+	test -r .venv || python -m venv .venv
+	$(VENV) python3 -m pip install -r requirements.txt
+
+deploy: $(MD_ORG) | .venv/
+	$(VENV) mkdocs gh-deploy
+serve:
+	$(VENV) mkdocs serve

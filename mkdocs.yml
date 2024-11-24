@@ -52,7 +52,7 @@ plugins:
         - section: 'svslipid'
           section_path: 'Projects/External'
           import_url: 'https://github.com/NPACore/svslipid?branch=main&docs_dir=*.md&multi_docs=false'
-        - section: ''
+        - section: 'awesome-list'
           section_path: 'Projects/External'
           import_url: 'https://github.com/NPACore/awesome-neuroimaging?branch=main&docs_dir=readme.md&multi_docs=true'
 
