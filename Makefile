@@ -15,5 +15,5 @@ MD_ORG := $(patsubst %.org,%.md,$(ALLORG))
 
 deploy: $(MD_ORG) | .venv/
 	$(VENV) mkdocs gh-deploy
-serve:
+serve: .venv/
 	$(VENV) mkdocs serve

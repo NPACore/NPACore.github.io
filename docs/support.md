@@ -1,4 +1,8 @@
-# Support
+---
+Title: Support and Services
+weight: -1
+---
+# Support and Services
 
 The Neuroimaging Processing and Analytics Core can support
 
@@ -23,5 +27,5 @@ The Neuroimaging Processing and Analytics Core can support
 - Pipeline scheduling, automation and containerization
 - Source code version control and data provenance setup and/or training
 
-mirrors: [wiki](https://rad.pitt.edu/wiki/doku.php?id=npac:service)
+mirrors: [wiki](https://rad.pitt.edu/wiki/doku.php?id=npac:support)
 [confluence](https://pitt-rad-it.atlassian.net/wiki/external/YzE1MmRlNGQxNzJiNDkwYTk2N2YxNjhlZTM1YjZkN2M) [github](https://npacore.github.io/support/)
