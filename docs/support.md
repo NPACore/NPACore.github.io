@@ -1,4 +1,4 @@
-# NPAC Services
+# Support
 
 The Neuroimaging Processing and Analytics Core can support
 
